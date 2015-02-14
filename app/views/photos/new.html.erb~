@@ -8,15 +8,6 @@
   <%= f.label :image %>
   <%= f.file_field :image, required: true %>
 <br>
-  <%= f.label :height %>
-  <%= f.number_field :height %>
-
-<br>
-
-  <%= f.label :width %>
-  <%= f.number_field :width %>
-
-<br>
   <%= f.submit 'Submit' %>
 
 <% end %>

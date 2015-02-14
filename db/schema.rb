@@ -11,13 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150211180021) do
+ActiveRecord::Schema.define(version: 20150214090516) do
 
   create_table "photos", force: true do |t|
     t.string   "image_uid"
     t.string   "title"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "width"
+    t.integer  "height"
   end
 
 end

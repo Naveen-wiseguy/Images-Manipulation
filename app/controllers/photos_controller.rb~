@@ -1,4 +1,4 @@
-class PhotosControllerController < ApplicationController
+class PhotosController < ApplicationController
 
  def new
    @photo=Photo.new

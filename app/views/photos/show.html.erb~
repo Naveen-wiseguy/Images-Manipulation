@@ -1,4 +1,8 @@
 <h1> <%= @photo.title %> <h1>
 <% h=@photo.height %>
 <% w=@photo.width %>
+<% size="'#{@photo.width}x#{@photo.height}'" %>
+<%= @photo.width %><br>
+<%= @photo.height %><br>
+<%= size %>
 <%= image_tag(@photo.image.thumb("#{w}x#{h}").url, alt: @photo.title) %>
