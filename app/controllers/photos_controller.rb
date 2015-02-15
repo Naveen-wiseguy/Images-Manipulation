@@ -20,4 +20,9 @@ class PhotosController < ApplicationController
  def photo_param
    params.require(:photo).permit(:image,:title,:height,:width)
  end
+
+ def destroy
+   Photo.find(params[:id]).destroy
+   redirect_to new_photo_path
+ end
 end

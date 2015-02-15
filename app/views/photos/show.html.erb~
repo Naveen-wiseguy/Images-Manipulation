@@ -4,4 +4,6 @@
 <% if(@photo.maintain_aspect_ratio) then str="#{w}x#{h}" %>
 <% else str="#{w}x#{h}#" %>
 <% end %>
-<%= link_to image_tag(@photo.image.thumb(str).url, alt: @photo.title), @photo.image.thumb("#{w}x#{h}").url %>
+<%= link_to image_tag(@photo.image.thumb(str).url, alt: @photo.title), @photo.image.thumb(str).url %>
+<br>
+<%= button_for "Done", @photo, method: :delete %>

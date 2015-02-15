@@ -2,7 +2,7 @@ Images::Application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
-  resources :photos , only: [:new, :create, :show]
+  resources :photos , only: [:new, :create, :show, :destroy]
   root to: 'photos#new'
 
   # You can have the root of your site routed with "root"
