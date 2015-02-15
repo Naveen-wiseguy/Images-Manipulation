@@ -18,7 +18,7 @@ class PhotosController < ApplicationController
  end
 
  def photo_param
-   params.require(:photo).permit(:image,:title,:height,:width)
+   params.require(:photo).permit(:image,:title,:height,:width,:maintain_aspect_ratio)
  end
 
  def destroy

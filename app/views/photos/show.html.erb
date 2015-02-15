@@ -1,7 +1,7 @@
 <h1> <%= @photo.title %> <h1>
 <% h=@photo.height %>
 <% w=@photo.width %>
-<% if(@photo.maintain_aspect_ratio) then str="#{w}x#{h}" %>
+<% if(@photo.maintain_aspect_ratio == true) then str="#{w}x#{h}" %>
 <% else str="#{w}x#{h}#" %>
 <% end %>
 <%= link_to image_tag(@photo.image.thumb(str).url, alt: @photo.title), @photo.image.thumb(str).url %>
