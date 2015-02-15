@@ -6,4 +6,4 @@
 <% end %>
 <%= link_to image_tag(@photo.image.thumb(str).url, alt: @photo.title), @photo.image.thumb(str).url %>
 <br>
-<%= button_for "Done", @photo, method: :delete %>
+<%= button_to "Done", @photo, method: :delete %>
